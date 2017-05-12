@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>webrx-title</title>
+    <meta name="description" content="简介">
+    <meta name="keywords" content="关键字">
+    <style>
+        *{ margin: 0; padding: 0;}
+        a{text-decoration: none;}
+        body{ padding-top: 50px;}
+        #fullpage{ width:100%;transition:all 1s;position: fixed;top:50px;left:0px}
+        .section{ height: 400px; width: 100%; clear: both;}
+        .odd{background: yellow;}
+        .nav{ list-style:none;width: 100%; height: 50px; line-height: 50px; position:fixed; left: 0; top: 0;box-shadow: 0 2px 1px #666; background-color:#fff ; z-index: 100;  }
+        .nav li{ width: 120px; color: #777; border-left: 1px solid #f0f0f0; text-align: center; float: left;}
+    </style>
+</head>
+<body>
+<ul class="nav">
+    <li style="background-color:yellow"><a href="#">nav1</a></li>
+    <li><a href="#">nav2</a></li>
+    <li><a href="#">nav3</a></li>
+    <li><a href="#">nav4</a></li>
+    <li><a href="#">nav5</a></li>
+    <li><a href="#">nav6</a></li>
+    <li><a href="#">nav7</a></li>
+</ul>
+<div id="fullpage">
+    <div class="section odd">section1</div>
+    <div class="section">section2</div>
+    <div class="section odd">section3</div>
+    <div class="section">section4</div>
+    <div class="section odd">section5</div>
+    <div class="section">section6</div>
+    <div class="section odd">section7</div>
+</div>
+</body>
+<script>
+    var con=document.getElementById("fullpage");//获取id是fullpage的div
+    var divs=con.getElementsByTagName("div");
+    var vH=document.documentElement.clientHeight||document.body.clientHeight;//获取屏幕的高度
+    var lis=document.getElementsByTagName("li");
+    var index=0;
+    for(var i=0;i<divs.length;i++){
+    	divs[i].style.height=vH+"px";
+    }
+    function addEvent(obj,type,fn){
+    	if(obj.addEventListener){
+    		obj.addEventListener(type,fn,false);
+    	}else if(obj.attachEvent){
+    		obj.attachEvent("on"+type,fn);
+    	}
+    }
+    function getWD(evt){
+    	var e=evt||window.event;
+    	if(e.wheelDelta){
+    		return e.wheelDelta;//非火狐
+    	}else if(e.detail){
+    		return -e.detail*40;//火狐
+    	}
+    }
+    addEvent(document,"mousewheel",fun);
+    addEvent(document,"DOMMouseScroll",fun);
+    function fun(ev){
+    	if(getWD(ev)>0){
+    		index++;
+    	}
+    	if(getWD(ev)<0){
+    		index--;
+    	}
+    	if(index>6){
+    		index=0;
+    	}
+    	if(index<0){
+    		index=6;
+    	}
+    	for(var n=0;n<lis.length;n++){
+    		lis[n].style.backgroundColor="white";//把所有li元素的背景颜色变成白色
+    	}
+    	lis[index].style.backgroundColor="yellow";//给是当前index的li元素加上背景色
+    	con.style.top=50+index*-vH+"px";
+    }
+    //找所有的同级的兄弟节点
+    function siblings(elem) {
+        a = [];
+        p = elem.parentNode.children;
+        for(var i =0;i<p.length;i++) {
+            if(p[i] !== elem) a.push(p[i]);
+        }
+        return a;
+    }
+    function prevDefault(evt){
+    	var e=evt||window.event;
+    	if(e.preventDefault){
+    		e.preventDefault();
+    	}else{
+    		e.returnValue=false;
+    	}
+    }
+	for(var j=0;j<lis.length;j++){
+		lis[j].index=j;//把li的下标赋值给对应的index
+		lis[j].onclick=function(evt){
+			prevDefault(evt);//把a元素的默认行为取消
+			var liIndex=this.index;//获取当前点击的li的索引值
+			for(var k=0;k<siblings(this).length;k++){//遍历当前li元素是兄弟
+				siblings(this)[k].style.backgroundColor="white";
+			}
+			this.style.backgroundColor="yellow";//给当前的li元素加上背景
+			con.style.top=50+liIndex*-vH+"px";
+		}
+	}
+
+</script>
+</html>

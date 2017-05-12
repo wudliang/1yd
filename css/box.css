@@ -1,0 +1,569 @@
+body{
+	padding-top: 35px;
+}
+/*城市与别墅*/
+#box{
+	/*height: 100%;*/
+	overflow: hidden;
+	position: relative;
+}
+.bga{
+	background:#5E5E5E;
+}
+#box #boxprebtn,#boxnextbtn{
+	width:40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 20px;
+	color:#fff;
+	background: #5E5E5E;
+	border: none;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	/*display: none;*/
+}
+#box #boxmain .boxback{
+	width:154px;	
+	height: 39px;
+	position: absolute;
+	right: 30px;
+	top:140px;	
+}
+ .allback{
+	width:39px;
+	height: 39px;
+	border: none;
+	background: #B71018;
+	color:#fff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+}
+#boxprebtn{	
+	left: 3%;
+	top:55%;
+}
+#boxnextbtn{
+	right: 3%;
+	top:55%;
+}
+#boxmain{
+	width:10000px;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+}
+#boxmain>div{
+	position: relative;
+	float:left;
+}
+/*地理位置*/
+
+#boxmain1{	
+	position:relative;
+	background-image: url('../images/bg_02 (1).jpg');
+	background-size:cover;		
+}
+.main1pic1{
+	z-index: 99;
+	position: absolute;
+	top:150px;
+	left:45%;
+}
+.main1pic2{
+	z-index: 99;
+	position: absolute;
+	top:380px;
+	left:33%;
+}
+#boxmain div #main1Div{
+	width:541px;
+	height: 89px;
+	z-index: 99;
+	position: absolute;
+	left: 30%;
+	top:220px;
+	position: relative;
+}
+#main1Div1{
+	display: block;
+}
+#main1Div2{
+	display: none;
+}
+#boxmain1 a{
+	display: block;
+	color:#fff;
+	text-align: center;
+	line-height: 20px;	
+	width:20px;
+	height: 20px;
+	border-radius: 50%;
+	color:#fff;
+}
+#boxmain1 #prea{
+	position: absolute;
+	left: 45%;
+	top:110px;
+}
+#boxmain1 #nexta{
+	position: absolute;
+	left: 51%;
+	top:110px;
+}
+/*周边配套*/
+#boxmain2{
+	background-image: url('../img/info/info1/in2/bg_02.jpg');
+	background-size:cover;
+	position:relative;		
+}
+#boxmain  #main2Div{
+	width:756px;
+	height: 315px;
+	margin-top: 100px;
+	margin-left:300px;
+	text-align: center;
+}
+#main2Div1{
+	padding-top:30px;
+}
+#main2btn{
+	width:753px;
+	height: 105px;
+	margin-top: 20px;
+	margin-left:300px;
+}
+#box #main2btn span{
+	display: block;
+	width: 251px;
+	height: 105px;
+	float:left;
+}
+/*别墅与山*/
+#boxmain3{
+	background-image: url('../img/info/info1/in3/bg_02.jpg');
+	background-size:cover;	
+	position:relative;	
+}
+#boxmain3 #main3Div{
+ 	width:756px;
+ 	height: 370px;
+ 	margin-top: 80px;
+ 	margin-left:300px;
+ 	padding-top:30px;
+ 	text-align: center;
+ }
+/*地缘优势*/
+#boxmain4{
+	background-image: url('../img/info/info1/in3/bg_02.jpg');
+	background-size:cover;	
+	position:relative;	
+}
+#boxmain4 #main4Div{
+ 	width:756px;
+ 	height: 370px;
+ 	margin-top: 80px;
+ 	margin-left:300px;
+ 	padding-top:30px;
+ 	text-align: center;
+ }
+/*别墅与中国*/
+#box1{
+	background-image: url(../img/info/info2/bg_01.jpg);
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+#box1l{
+	width:425px;
+	height: 593px;
+	background-image: url(../img/info/info2/bg_02.png);
+	margin-left: 174px;
+	margin-top: 100px;
+	float: left;
+}
+#box1r{
+	width:575px;
+	height: 527px;
+	float: left;
+	margin-top: 100px;
+	text-align: center;
+}
+#box1r button{
+	margin: 30px 10px 0 30px;
+	display: inline-block;
+	border: none;
+	width:117px;
+	height: 33px;
+}
+#box1r #box1btnl{
+	background: url(../img/info/info2/bg_04.jpg);
+}
+#box1r #box1btnr{
+	background: url(../img/info/info2/bg_06.jpg);
+}
+#box1Div{
+	margin-top: 30px;
+	margin-left: 40px;
+	width:490px;
+	height: 225px;
+}
+#box1Div2{
+	display: none;
+}
+/*别墅与园林*/
+#box2{
+	background-image: url(../img/info/info3/bg_02.jpg);
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+#box2main{
+	width:1000px;
+	height: 406px;
+	margin-left: 12%;
+	margin-top: 110px;
+}
+.allback{
+	width:39px;
+	height: 39px;
+	border: none;
+	background: #B71018;
+	color:#fff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+}
+.box3back{
+	width:154px;	
+	height: 39px;
+	position: absolute;
+	right: 20px;
+	top:120px;	
+}
+
+#box2main>img{
+	margin-right: 5px;
+}
+#box2main2{
+	width:172px;
+	height: 55px;
+	margin-left: 43%;
+	margin-top: 30px;
+}
+
+/*box3别墅大社区*/
+#box3{
+	overflow: hidden;
+	position: relative;
+}
+#box3prebtn,#box3nextbtn{
+	width:40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 20px;
+	color:#fff;
+	background: #5E5E5E;
+	border: none;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	/*display: none;*/
+}
+#box3prebtn{	
+	left: 3%;
+	top:55%;
+}
+#box3nextbtn{
+	right: 3%;
+	top:55%;
+}
+#box3main{
+	width:10000px;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+}
+#box3main>div{
+	position: relative;
+	float:left;
+}
+#box3main1{
+	background-image: url(../img/info/info4/bg_03.jpg);
+	background-size:cover;	
+	position: relative;
+}
+#box3main1l{
+	width:740px;
+	height: 100%;
+	margin-top: 100px;
+	margin-left: 150px;
+	overflow: hidden;
+	float: left;
+}
+#box3main1r{
+	width:304px;
+	height: 382px;
+	margin-top: 245px;
+	float: left;
+}
+.box3back{
+	width:154px;	
+	height: 39px;
+	position: absolute;
+	right: 20px;
+	top:140px;	
+}
+ .allback{
+	width:39px;
+	height: 39px;
+	border: none;
+	background: #B71018;
+	color:#fff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+}
+#box3main2{
+	background-image: url(../img/info/info4/bg_03.jpg);
+	background-size:cover;	
+	position: relative;
+}
+#box3main2Div{
+	width:1165px;
+	height: 574px;
+	margin-top: 100px;
+	margin-left: 80px;
+}
+#box3main2pic1{
+	position: absolute;
+	top:320px;
+	left: 150px;
+}
+#box3main2pic2{
+	position: absolute;
+	top:200px;
+	left: 700px;
+}
+#box3main2pic3{
+	position: absolute;
+	top:90px;
+	left: 830px;
+}
+#box3main2pic4{
+	position: absolute;
+	top:180px;
+	left: 900px;
+}
+#box3main2pic5{
+	position: absolute;
+	top:450px;
+	left: 1080px;
+}
+#box3main3{
+	background-image: url(../img/info/info4/bg_04.jpg);
+	background-size:cover;	
+	position: relative;
+	text-align: center;
+	padding-top: 120px;
+}
+/*box4*/
+#box4{
+	overflow: hidden;
+	position: relative;
+}
+#box4prebtn,#box4nextbtn{
+	width:40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 20px;
+	color:#fff;
+	background: #5E5E5E;
+	border: none;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	/*display: none;*/
+}
+#box4prebtn{	
+	left: 3%;
+	top:55%;
+}
+#box4nextbtn{
+	right: 3%;
+	top:55%;
+}
+#box4main{
+	width:10000px;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+}
+#box4main>div{
+	position: relative;
+	float:left;
+}
+#box4main1{
+	background-image: url(../img/info/info5/bg_02.jpg);
+	background-size:cover;	
+	position: relative;
+}
+.box4main1tit{
+	position: absolute;
+	top:110px;
+	left: 180px;
+}
+#box4main1Divl{
+	width:712px;
+	height: 527px;
+	text-align: center;
+	margin-top: 100px;
+	margin-left: 220px;
+	float:left;
+}
+#box4main1Divr{
+	width:300px;
+	height: 490px;
+	margin-top: 120px;
+	float:left;
+	position: relative;	
+}
+#box4main1Divr>div{
+	width:300px;
+	height: 135px;
+	position: absolute;
+	left:0;
+}
+#box4main1Divr>div span{
+	line-height: 135px;
+	font-size: 22px;
+	color:#5E5E5E;
+}
+#box4main1Divr1{
+	top:0;
+	z-index: 90;
+}
+#box4main1Divr2{
+	padding-left: 50px;
+	padding-top: 10px;
+	top:90px;
+	z-index: 80;
+}
+#box4main1Divr3{
+	padding-left: 50px;
+	top:180px;
+	padding-top: 10px;
+	z-index: 70;
+}
+#box4main1Divr4{
+	padding-left: 50px;
+	top:260px;
+	padding-top: 10px;
+	z-index: 60;
+}
+#box4main1Divr5{
+	top:320px;
+	z-index: 50;
+}
+/*box4main2*/
+#box4main2{
+	background-image: url(../img/info/info5/bg_02.jpg);
+	background-size:cover;	
+	position: relative;
+}
+
+#box4main2 .box4main2btn{
+	display: inline-block;
+	width:138px;
+	height: 41px;
+	border: none;
+}
+#box4main2 .box4main2btnl{
+	background: url(../img/info/info5/oper1.jpg);
+	position: absolute;
+	left: 39%;
+	top:120px;
+}
+#box4main2 .box4main2btnr{	
+	background: url(../img/info/info5/oper2.jpg);
+	/*margin-right: 10px;*/
+	position: absolute;
+	left: 50%;
+	top:120px;
+}
+#box4main2Div{
+	width:1150px;
+	height: 240px;
+	margin-left: 100px;
+	margin-top: 200px;
+}
+#box4main2Div1,#box4main2Div2{
+	width:1150px;
+	height: 240px;
+}
+#box4main2Div1>span,#box4main2Div2>span{
+	display: inline-block;
+	border: 5px solid #d1d1d1;
+}
+#box4main2Div1>span:hover,#box4main2Div2>span:hover{
+	/*display: inline-block;*/
+	border: 5px solid red;
+}
+/*样板间*/
+#box4main3{
+	background-image: url(../img/info/info5/bg_02.jpg);
+	background-size:cover;	
+	position: relative;
+}
+#box4main3DivT{
+	width:817px;
+	height: 387px;
+	background: red;
+	margin-top: 100px;
+	margin-left: 250px;
+	overflow: hidden;
+	
+}
+#box4main3DivB{
+	width:818px;
+	height: 47px;
+	overflow: hidden;
+	margin-top: 6px;
+	margin-left: 250px;
+	position: relative;
+
+}
+#box4main3DivBpic{
+	width:4000px;
+	height: 47px;
+	font-size: 0;
+	overflow: hidden;
+	position: absolute;
+	left:0;
+}
+#box4main3DivBpic img{
+	height: 47px;
+	margin-right: 3px;
+}
+#box4main3>span{
+	display: block;
+	width:15px;
+	height: 27px;
+}
+#box4main3L{
+	position: absolute;
+	left: 230px;
+	top:505px;	
+}
+#box4main3R{
+	position: absolute;
+	left: 1070px;
+	top:505px;
+}
+#ybjsx{
+	margin-top: 20px;
+	margin-left: 40%;
+}

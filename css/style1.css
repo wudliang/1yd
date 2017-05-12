@@ -1,0 +1,170 @@
+body{
+	padding-top:35px;
+}
+#box{
+	/*height: 100%;*/
+	overflow: hidden;
+	position: relative;
+}
+.bga{
+	background:#5E5E5E;
+}
+#box #boxprebtn,#boxnextbtn{
+	width:40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 20px;
+	color:#fff;
+	background: #5E5E5E;
+	border: none;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	/*display: none;*/
+}
+#box #boxmain .boxback{
+	width:154px;	
+	height: 39px;
+	position: absolute;
+	right: 30px;
+	top:140px;	
+}
+ .allback{
+	width:39px;
+	height: 39px;
+	border: none;
+	background: #B71018;
+	color:#fff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+}
+#boxprebtn{	
+	left: 3%;
+	top:55%;
+}
+#boxnextbtn{
+	right: 3%;
+	top:55%;
+}
+#boxmain{
+	width:10000px;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+}
+#boxmain>div{
+	position: relative;
+	float:left;
+}
+/*地理位置*/
+
+#boxmain1{	
+	position:relative;
+	background-image: url('../images/bg_02 (1).jpg');
+	background-size:cover;		
+}
+.main1pic1{
+	z-index: 99;
+	position: absolute;
+	top:150px;
+	left:45%;
+}
+.main1pic2{
+	z-index: 99;
+	position: absolute;
+	top:380px;
+	left:33%;
+}
+#boxmain div #main1Div{
+	width:541px;
+	height: 89px;
+	z-index: 99;
+	position: absolute;
+	left: 30%;
+	top:220px;
+	position: relative;
+}
+#main1Div1{
+	display: block;
+}
+#main1Div2{
+	display: none;
+}
+#boxmain1 a{
+	display: block;
+	color:#fff;
+	text-align: center;
+	line-height: 20px;	
+	width:20px;
+	height: 20px;
+	border-radius: 50%;
+	color:#fff;
+}
+#boxmain1 #prea{
+	position: absolute;
+	left: 45%;
+	top:110px;
+}
+#boxmain1 #nexta{
+	position: absolute;
+	left: 51%;
+	top:110px;
+}
+/*周边配套*/
+#boxmain2{
+	background-image: url('../img/info/info1/in2/bg_02.jpg');
+	background-size:cover;
+	position:relative;		
+}
+#boxmain  #main2Div{
+	width:756px;
+	height: 315px;
+	margin-top: 100px;
+	margin-left:300px;
+	text-align: center;
+}
+#main2Div1{
+	padding-top:30px;
+}
+#main2btn{
+	width:753px;
+	height: 105px;
+	margin-top: 20px;
+	margin-left:300px;
+}
+#box #main2btn span{
+	display: block;
+	width: 251px;
+	height: 105px;
+	float:left;
+}
+/*别墅与山*/
+#boxmain3{
+	background-image: url('../img/info/info1/in3/bg_02.jpg');
+	background-size:cover;	
+	position:relative;	
+}
+#boxmain3 #main3Div{
+ 	width:756px;
+ 	height: 370px;
+ 	margin-top: 80px;
+ 	margin-left:300px;
+ 	padding-top:30px;
+ 	text-align: center;
+ }
+/*地缘优势*/
+#boxmain4{
+	background-image: url('../img/info/info1/in3/bg_02.jpg');
+	background-size:cover;	
+	position:relative;	
+}
+#boxmain4 #main4Div{
+ 	width:756px;
+ 	height: 370px;
+ 	margin-top: 80px;
+ 	margin-left:300px;
+ 	padding-top:30px;
+ 	text-align: center;
+ }
+
